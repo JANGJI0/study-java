@@ -8,6 +8,6 @@ public class CarMain {
 
         GasCar gasCar = new GasCar();
         gasCar.move();
-       
+
     }
 }
