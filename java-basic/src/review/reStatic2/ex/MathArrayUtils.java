@@ -6,18 +6,34 @@ public class MathArrayUtils {
         // 인스턴스 생성을 막는다.
     }
     public static int sum(int[] values) {
-        return 0;
+        int total = 0;
+        for (int i = 0; i < values.length; i++) {
+            total += values[i];
+        }
+        return total;
     }
 
-    public static int average(int[] values) {
-        return 0;
+    public static double average(int[] values) {
+        return (double) sum(values) / values.length;
     }
 
     public static int min(int[] values) {
-        return 0;
+        int minValue = values[0];
+        for (int i = 1; i < values.length; i++) {
+            if (values[i] < minValue) {
+                minValue = values[i];
+            }
+        }
+        return minValue;
     }
 
     public static int max(int[] values) {
-        return 0;
+        int maxValue = values[0];
+        for (int i = 1; i < values.length; i++) {
+            if (values[i] > maxValue) {
+                maxValue = values[i];
+            }
+        }
+        return maxValue;
     }
 }
